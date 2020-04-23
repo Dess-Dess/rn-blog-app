@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { HeaderButtons, Item } from "react-navigation-header-buttons";
-import { DATA } from "../data";
+import { useSelector } from "react-redux";
 import { AppHeaderIcon } from "../components/AppHeaderIcon";
 import { PostList } from "../components/PostList";
 
@@ -13,9 +13,9 @@ export const BookmarkedScreen = ({ navigation }) => {
     });
   };
 
-  return (
-    <PostList data={DATA.filter((post) => post.booked)} onOpen={goToPost} />
-  );
+  const bookedPosts = useSelector((state) => state.post.bookedPosts);
+
+  return <PostList data={bookedPosts} onOpen={goToPost} />;
 };
 
 BookmarkedScreen.navigationOptions = ({ navigation }) => {
