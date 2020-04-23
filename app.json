@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "rn-blog-app",
+    "slug": "rn-blog-app",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/rn-icon.png",
+    "splash": {
+      "image": "./assets/rn-splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#242833"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    }
+  }
+}
