@@ -1,12 +1,8 @@
 {
   "expo": {
-    "name": "rn-blog-app",
+    "name": "Blog App",
     "slug": "rn-blog-app",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
+    "platforms": ["ios", "android", "web"],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/rn-icon.png",
@@ -18,11 +14,15 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.dess-dess-dev.blog-app",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.dess_dess_dev.blog_app",
+      "permissions": ["CAMERA", "WRITE_EXTERNAL_STORAGE"]
     }
   }
 }

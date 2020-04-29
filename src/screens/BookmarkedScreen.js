@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { HeaderButtons, Item } from "react-navigation-header-buttons";
 import { useSelector } from "react-redux";
 import { AppHeaderIcon } from "../components/AppHeaderIcon";
